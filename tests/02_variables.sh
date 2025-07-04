@@ -8,8 +8,8 @@ RESET="\033[0m"
 output=$(sh exercises/02_variables.sh)
 
 if [ "$output" = "Hello Bob" ]; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 else 
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 fi

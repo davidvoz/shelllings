@@ -8,13 +8,13 @@ RESET="\033[0m"
 [ -f ".youfoundme" ] || touch .youfoundme
 
 sh exercises/03_listing.sh || {
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 }
 
 if [ -f ".youfoundme" ]; then
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 else 
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 fi

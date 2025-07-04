@@ -8,8 +8,8 @@ RESET="\033[0m"
 output="$(sh exercises/01_echo.sh)"
 
 if [ -z "$output" ]; then
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 else 
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 fi

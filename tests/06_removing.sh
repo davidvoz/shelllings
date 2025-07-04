@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -eu
-
 RED="\033[31m"
 GREEN="\033[32m"
 RESET="\033[0m"
@@ -14,18 +13,18 @@ trap cleanup EXIT
 sh exercises/06_removing.sh
 
 [ "$(wc -l < exercises/06_removing.sh)" -eq 44 ] || {
-	echo "${RED}Failed${RESET} not 27 lines"
+	printf "${RED}Failed${RESET} not 27 lines\n"
 	exit 1
 }
 
 [ -d "06_folder" ] || {
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 }
 
 if [ "$(ls -A 06_folder | wc -l)" -eq 0 ]; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 else
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 fi

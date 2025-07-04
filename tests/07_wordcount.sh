@@ -9,8 +9,8 @@ output=$(sh exercises/07_wordcount.sh)
 answer=$(wc -l LICENSE; wc -w LICENSE; wc -c LICENSE)
 
 if [ "$output" = "$answer" ]; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 else
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 fi

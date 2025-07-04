@@ -18,9 +18,9 @@ printf "entering password prompt, press control c): "
 read user_input
 
 if [ "$user_input" = "grannyApples" ]; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 	rm -rf blueberry
 else 
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 fi

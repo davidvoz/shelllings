@@ -15,9 +15,9 @@ output=$(wc -l < 09_file)
 answer=$(cat LICENSE exercises/* | wc -l)
 
 if [ $output -eq $answer ]; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 	exit 0
 else
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 	exit 1
 fi

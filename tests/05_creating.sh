@@ -8,8 +8,8 @@ RESET="\033[0m"
 sh exercises/05_creating.sh
 
 if find . -mindepth 4 -type f -name file | grep -q .; then
-    echo "${GREEN}Passed${RESET}"
+    printf "${GREEN}Passed${RESET}\n"
 else
-    echo "${RED}Failed${RESET}"
+    printf "${RED}Failed${RESET}\n"
 	exit 1
 fi

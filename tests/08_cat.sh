@@ -14,7 +14,7 @@ output=$(sh exercises/08_cat.sh)
 answer=$(tail -n 50 LICENSE | wc -w)
 
 if [ $(wc -w < 08_cat) -eq $answer ]; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}\n"
 else
-	echo "${RED}Failed${RESET}"
+	printf "${RED}Failed${RESET}\n"
 fi
