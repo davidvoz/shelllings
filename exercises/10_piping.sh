@@ -26,4 +26,5 @@ ls -A "$HOME" > file
 wc -l file
 
 # As a fun exercise, run that command above and see how cluttered your
-# home directory is.
+# home directory is. In fact, in many modern shells, "$HOME" isn't
+# needed, '~' is enough. 'ls -A ~' will list out your home directory
