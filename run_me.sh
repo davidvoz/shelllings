@@ -42,10 +42,12 @@ echo "To use the program shelllings, let's run the command"
 echo "'sh shelllings.sh test' to see if it's able to be run"
 pause "[sh shelllings.sh test]"
 
-sh shelllings.sh test && echo "${GREEN}Passed${RESET}"|| {
+if sh shelllings.sh test; then
+	echo "${GREEN}Passed${RESET}"
+else
 	echo "${RED}ERROR failed${RESET}"
 	exit 1
-}
+fi
 
 echo ""
 echo "No error message meant that it has not failed. Lets continue on"
@@ -67,5 +69,6 @@ echo "front. Let's get started with the first exercise"
 pause "[sh shelllings.sh 1]"
 
 sh shelllings.sh 1 || {
-	echo "Looks like it failed. Go on over to the exercises/ folder and fix it"
+	echo "Looks like it failed. Go on over to the exercises/ folder and"
+	printf "fix it then run ${GREEN}sh shelllings 1${RESET} again.\n"
 }
