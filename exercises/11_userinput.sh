@@ -16,5 +16,4 @@
 # Fix this program that is meant to input the user's input into a file
 
 printf "Enter your sentence: "
-read user_input
-echo "$user_input" > 11_file
+read user_input > 11_file
