@@ -12,5 +12,6 @@ failed() {
 
 [ "$(sh exercises/16_andand_oror.sh 1412)" = "correct pin" ] || failed
 [ "$(sh exercises/16_andand_oror.sh 9999)" = "incorrect pin" ] || failed
+[ $(grep "&&" exercises/16_andand_oror.sh | wc -l) -eq 6 ] || failed
 
 printf "${GREEN}Passed${RESET}\n"

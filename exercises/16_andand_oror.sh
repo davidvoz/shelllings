@@ -29,9 +29,12 @@
 # it should still be easily readable to humans to debug and understand.
 #
 # Fix the code below so the echo commands make sense with the pin 1412
+# Leave the two && in place
 
-[ $1 -eq 1412 ] || {
-	echo "correct pin"
-} && {
-	echo "incorrect pin"
-}
+[] && echo "incorrect pin"
+[] && echo "correct pin"
+
+# You can also combine it into 1 line but it doesn't always comply with
+# many shells
+#
+# $ [] && echo "good" || echo "bad"
