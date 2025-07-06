@@ -17,4 +17,5 @@ correct_first_line="One day, ugly Jayce left a big tofu in his pocket."
 [ "$first_line" != "$correct_first_line" ] && failed
 [ "$(echo "$output" | grep 4)" != "The number of words you used were: 4" ] && failed
 [ "$(echo "$output" | grep "The words")" != "The words you used were: ugly Jayce big tofu" ] && failed
+
 printf "${GREEN}Passed${RESET}\n"
