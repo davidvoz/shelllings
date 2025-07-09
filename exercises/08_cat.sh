@@ -15,6 +15,6 @@
 # LICENSE file in this repository. Don't change the new file name.
 
 head 50 LICENSE > 08_cat # the '>' sign is discussed later. For now
-#						   know that the command should be outputting
-#						   the last 50 lines into a file called 08_cat
+#                          know that the command should be outputting
+#                          the last 50 lines into a file called 08_cat
 wc -l 08_cat

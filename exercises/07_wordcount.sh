@@ -3,11 +3,11 @@
 # wc, word count, is a program that measures and counts bytes, 
 # characters, and lines
 #
-# $ wc -l file		# counts the amount of lines in a file
-# $ wc -w file		# counts the amount of words in a file
-# $ wc -m file		# characters
-# $ wc -c file		# bytes
-# $ wc file			# gives out the lines, words, and bytes of a file
+# $ wc -l file      # counts the amount of lines in a file
+# $ wc -w file      # counts the amount of words in a file
+# $ wc -m file      # characters
+# $ wc -c file      # bytes
+# $ wc file         # gives out the lines, words, and bytes of a file
 #
 file="LICENSE"
 word_count=$(wc -w $file)

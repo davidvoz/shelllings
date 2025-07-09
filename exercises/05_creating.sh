@@ -12,9 +12,10 @@
 #
 # You can also create more folders at a single time
 #
-# $ mkdir -p dir1/dir2		# enables the parent option because without
-#							 it you cannot create more than a layer deep
-# $ touch dir1/dir2/file	# lets you touch a file deeper
+# $ mkdir -p dir1/dir2      # enables the parent option because without
+#                             it you cannot create more than a layer
+#                             deep
+# $ touch dir1/dir2/file    # lets you touch a file deeper
 #
 # For your exercise, fix the code that is meant to create a folder that
 # is at least 3 directories deep with a file named 'file'

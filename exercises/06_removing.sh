@@ -3,13 +3,13 @@
 # The previous exercises have created a mess in this folder. We can 
 # clean it up using the 'rm' command.
 #
-# $ rm file			# removes file
-# $ rm file1 file2	# removes files
-# $ rm -r dir/		# recursively removes files and folders
-# $ rm -rf dir/		# forces the previous command
-# $ rm *			# removes all the files within the current folder,
-# 					  saves time on not having to input every file
-# $ rmdir dir/		# removes an empty directory
+# $ rm file         # removes file
+# $ rm file1 file2  # removes files
+# $ rm -r dir/      # recursively removes files and folders
+# $ rm -rf dir/     # forces the previous command
+# $ rm *            # removes all the files within the current folder,
+#                     saves time on not having to input every file
+# $ rmdir dir/      # removes an empty directory
 #
 # The astrisk is a very important symbol in shell programming. Take the
 # example below
