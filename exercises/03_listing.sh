@@ -7,10 +7,10 @@
 # $ ls		# lists contents
 # $ ls -a	# lists hidden contents as well as unhidden
 # $ ls -A	# same as -a but without . and ..
-# 			  Also, not entirely POSIX compliant but many modern shells
-# 			  run it fine
+#             Also, not entirely POSIX compliant but many modern shells
+#             run it fine
 # $ ls -l	# shows linkages in files, like how we did with 
-# 			  ls -l /bin/sh
+#             ls -l /bin/sh
 # $ ls -R	# recursively goes into folders listing contents out
 # $ ls -AR	# separate arguments can be combined to execute both
 #
