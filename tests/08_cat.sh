@@ -15,6 +15,8 @@ answer=$(tail -n 50 LICENSE | wc -w)
 
 if [ $(wc -w < 08_cat) -eq $answer ]; then
 	printf "${GREEN}Passed${RESET}\n"
+	exit 0
 else
 	printf "${RED}Failed${RESET}\n"
+	exit 1
 fi

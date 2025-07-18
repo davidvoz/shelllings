@@ -12,4 +12,5 @@ if [ -z "$output" ]; then
 	exit 1
 else 
 	printf "${GREEN}Passed${RESET}\n"
+	exit 0
 fi
