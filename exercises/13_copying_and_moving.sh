@@ -6,11 +6,11 @@
 # When you copy a file, you create a new, separate copy of the file's
 # contents in another location.
 #
-# $ cp file1 file2			# this copies the contents, permissions,
-# 							  and metadata
-# $ cp file dir/			# copies the file into a directory
+# $ cp file1 file2          # this copies the contents, permissions,
+#                             and metadata
+# $ cp file dir/            # copies the file into a directory
 #
-# $ mv file /to/new/path/	# moves the file to a new location
+# $ mv file /to/new/path/   # moves the file to a new location
 # $ mv old_name new_name
 #
 # Often if you really don't want the metadata, and just want to have

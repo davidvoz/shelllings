@@ -30,10 +30,10 @@
 # strings, there are quotation marks around the variables. There are
 # more options than just '='
 #
-# =		# strict string comparison of equals
-# !=	# strict string comparison of does not equal
-# -z	# checks if string is empty
-# -n	# checks if string is not empty
+# =     # strict string comparison of equals
+# !=    # strict string comparison of does not equal
+# -z    # checks if string is empty
+# -n    # checks if string is not empty
 # 
 # Fix the incomplete script below, leave all the echo lines unchanged
 

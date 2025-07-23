@@ -29,7 +29,7 @@ fi
 # $		cat /tmp/note_temp >> "$NOTES_FILE"
 # $		echo "" >> "$NOTES_FILE"
 # $		rm /tmp/note_temp
-# $	fi
+# $ fi
 #
 # Don't forget to have that directory path exported as a path in your
 # shell config. Usually, like this
