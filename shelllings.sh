@@ -1,5 +1,4 @@
 #!/bin/sh
-# test
 
 EX_DIR="exercises"
 TEST_DIR="tests"
