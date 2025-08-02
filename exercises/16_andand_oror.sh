@@ -27,6 +27,8 @@
 # The semi colon is used the same way as other programming languages
 # where you can combine multiple lines into a single line. Note that
 # it should still be easily readable to humans to debug and understand.
+# If you go back to exercise 14, you can see them being used to condense
+# the 'do' word
 #
 # Fix the code below so the echo commands make sense with the pin 1412
 # Leave the two && in place
