@@ -10,8 +10,8 @@
 # $ tail file		# prints out the last 10 lines of a file
 # $ head -n 1		# prints out only the first line of a file
 # $ tail -n 18		# prints out only the last 18 lines of a file
-# $ head -n -4      # prints out all lines except the last four lines
-# $ tail -n +9      # prints out all lines except the first nine lines
+# $ head -n -4      # prints out all lines except the last 4 lines
+# $ tail -n +9      # prints out from line 9, onwards
 # 
 # Fix the command below to do a word count on the last 50 lines of the
 # LICENSE file in this repository. Don't change the new file name.
