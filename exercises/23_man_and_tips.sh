@@ -6,8 +6,10 @@
 # (sometimes '-h') to see the basic usage or the 'man' command to get
 # a more detailed documentation
 #
-# $ cat --help    # displays a basic help message
-# $ man cat       # enters you into a more detailed portal
+# $ cat --help     # displays a basic help message
+# $ man echo       # enters you into a more detailed portal
+#
+# You should try out those commands right in the terminal.
 #
 # If there are more specific use cases or you only need a few commands
 # that you keep forgetting, consider using the 'ffr' command located at
