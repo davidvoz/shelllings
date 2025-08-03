@@ -14,6 +14,4 @@ sh exercises/19_functions.sh -de | grep -q "Minimum reseeding in seconds:" || fa
 sh exercises/19_functions.sh -de | grep -q "displays the entropy" && failed
 sh exercises/19_functions.sh | grep -q "displays the entropy" || failed
 
-
 printf "${GREEN}Passed${RESET}\n"
-

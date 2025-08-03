@@ -6,7 +6,6 @@ GREEN="\033[32m"
 RESET="\033[0m"
 
 failed() {
-	[ -f "notes.txt" ] && rm notes.txt
 	printf "${RED}Failed${RESET}\n"
 	exit 1
 }
@@ -25,4 +24,3 @@ sh exercises/18_quiz.sh > /dev/null || failed
 [ ! $(grep "\-p" notes.txt | wc -l) -eq 1 ] && failed
 
 printf "${GREEN}Passed${RESET}\n"
-
