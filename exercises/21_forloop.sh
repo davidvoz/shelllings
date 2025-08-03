@@ -33,6 +33,3 @@ for file in tests/*; do
 	tail -n -1 "$test_file" > "$test_file".tmp
 	mv -f "$test_file".tmp "$test_file" # this line is valid
 done
-	
-
-

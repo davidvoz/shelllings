@@ -10,12 +10,13 @@ cleanup(){
 }
 trap cleanup EXIT
 
-sh exercises/11_userinput.sh
-
-if [ -s 11_file ]; then
-	printf "${GREEN}Passed${RESET}\n"
-	exit 0
-else
+failed() {
 	printf "${RED}Failed${RESET}\n"
 	exit 1
-fi
+}
+
+sh exercises/11_userinput.sh
+
+[ -s 11_file ] || failed
+
+printf "${GREEN}Passed${RESET}\n"

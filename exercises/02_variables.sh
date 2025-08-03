@@ -12,3 +12,4 @@
 
 name = Bob
 echo "Hello name" # this is a comment too, the program will ignore this
+                  # because of the pound sign

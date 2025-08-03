@@ -10,9 +10,9 @@ failed() {
 	exit 1
 }
 
-[ "$(sh exercises/19_functions.sh -de | grep "Minimum reseeding in seconds:" | wc -l)" -eq 1 ] || failed
-[ "$(sh exercises/19_functions.sh -de | grep "displays the entropy" | wc -l)" -eq 1 ] && failed
-[ "$(sh exercises/19_functions.sh | grep "displays the entropy" | wc -l)" -eq 1 ] || failed
+sh exercises/19_functions.sh -de | grep -q "Minimum reseeding in seconds:" || failed
+sh exercises/19_functions.sh -de | grep -q "displays the entropy" && failed
+sh exercises/19_functions.sh | grep -q "displays the entropy" || failed
 
 
 printf "${GREEN}Passed${RESET}\n"

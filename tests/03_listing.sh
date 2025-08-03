@@ -7,14 +7,18 @@ RESET="\033[0m"
 
 [ -f ".youfoundme" ] || touch .youfoundme
 
-sh exercises/03_listing.sh || {
+cleanup() {
+	[ -e .youfoundme ] && rm -f .youfoundme
+}
+trap cleanup EXIT
+
+failed() {
 	printf "${RED}Failed${RESET}\n"
 	exit 1
 }
 
-if [ -f ".youfoundme" ]; then
-	printf "${RED}Failed${RESET}\n"
-	exit 1
-else 
-	printf "${GREEN}Passed${RESET}\n"
-fi
+sh exercises/03_listing.sh || failed
+
+[ -f ".youfoundme" ] && failed
+
+printf "${GREEN}Passed${RESET}\n"

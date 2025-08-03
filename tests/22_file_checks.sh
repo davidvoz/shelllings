@@ -10,10 +10,9 @@ failed() {
 	exit 1
 }
 
-output=$(sh exercises/22_file_checks.sh)
 
 for keyword in Exists Directory empty Not; do
-  echo "$output" | grep -q "$keyword" || failed
+	sh exercises/22_file_checks.sh | grep -q "$keyword" || failed
 done
 
 printf "${GREEN}Passed${RESET}\n"

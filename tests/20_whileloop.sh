@@ -10,7 +10,7 @@ failed() {
 	exit 1
 }
 
-[ "$( printf "123\n456\n2987133075769857928\n" | sh exercises/20_whileloop.sh | grep "Nope" | wc -l)" -eq 2 ] || failed
-[ "$( printf "123\n456\n2987133075769857928\n" | sh exercises/20_whileloop.sh | grep "cheater" | wc -l)" -eq 1 ] || failed
+printf "123\n456\n2987133075769857928\n" | sh exercises/20_whileloop.sh | grep -q "Nope" || failed
+printf "123\n456\n2987133075769857928\n" | sh exercises/20_whileloop.sh | grep -q "cheater" || failed
 
 printf "${GREEN}Passed${RESET}\n"

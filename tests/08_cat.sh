@@ -10,13 +10,14 @@ cleanup() {
 }
 trap cleanup EXIT
 
+failed() {
+	printf "${RED}Failed${RESET}\n"
+	exit 1
+}
+
 output=$(sh exercises/08_cat.sh)
 answer=$(tail -n 50 LICENSE | wc -w)
 
-if [ $(wc -w < 08_cat) -eq $answer ]; then
-	printf "${GREEN}Passed${RESET}\n"
-	exit 0
-else
-	printf "${RED}Failed${RESET}\n"
-	exit 1
-fi
+[ $(wc -w < 08_cat) -eq $answer ] || failed
+
+printf "${GREEN}Passed${RESET}\n"
