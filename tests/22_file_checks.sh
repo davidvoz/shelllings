@@ -10,7 +10,6 @@ failed() {
 	exit 1
 }
 
-
 for keyword in Exists Directory empty Not; do
 	sh exercises/22_file_checks.sh | grep -q "$keyword" || failed
 done
