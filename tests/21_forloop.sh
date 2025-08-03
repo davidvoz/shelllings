@@ -12,6 +12,8 @@ failed() {
 		sed -i '/^# bloat message$/d' $file
 	done
 
+	[ -e .tmp ] && rm .tmp
+
 	exit 1
 }
 
