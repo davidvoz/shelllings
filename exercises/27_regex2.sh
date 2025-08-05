@@ -26,18 +26,18 @@ verify() {
 	# don't forget the + symbol in some of these regex
 
 	# verify that the beginning has valid characters
-	echo "$1" | grep -Eq '^[a-zA-Z0-9]+' || exit 1
+	echo "$1" | grep -Eq  || exit 1
 
 	# verify that an @ symbol and a second level domain is present with
 	# only letters and numbers
-	echo "$1" | grep -Eq '@[a-zA-Z]+' || exit 1
+	echo "$1" | grep -Eq  || exit 1
 
 	# verify a dot is present
-	echo "$1" | grep -Eq '\.' || exit 1
+	echo "$1" | grep -Eq  || exit 1
 
 	# verify the ending is a top level domain with 2 or more lowercase
 	# characters
-	echo "$1" | grep -Eq '[a-z]{2,}$' || exit 1
+	echo "$1" | grep -Eq  || exit 1
 }
 
 verify $1
