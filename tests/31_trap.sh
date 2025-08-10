@@ -13,6 +13,8 @@ failed() {
 
 sh exercises/31_trap.sh | grep -Eq "Removing..." || failed
 
+grep 'trap' exercises/31_trap.sh | grep "rm file\.txt" | grep 'Removing...' | grep -q 'EXIT' || failed
+
 [ -f "file.txt" ] && failed
 
 printf "${GREEN}Passed${RESET}\n"
