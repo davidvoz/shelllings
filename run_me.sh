@@ -5,7 +5,7 @@ GREEN="\033[32m"
 RESET="\033[0m"
 
 pause() {
-	printf "%s" "$1"
+	printf "$1"
 	read user_input
 	echo ""
 }
@@ -38,6 +38,10 @@ echo "POSIX compliant programs and commands. Meaning just about"
 echo "every shell you use will be able to understand and run these"
 echo "commands. This will not always be the case, however."
 pause "[press ENTER]"
+
+printf "The LICENSE file is going to be used often later, ${RED}don't\n"
+printf "remove the LICENSE file${RESET}. Thanks."
+pause ""
 
 echo "To use the program shelllings, let's run the command"
 echo "'sh shelllings.sh test' to see if it's able to be run"
