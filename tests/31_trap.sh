@@ -5,6 +5,10 @@ RED="\033[31m"
 GREEN="\033[32m"
 RESET="\033[0m"
 
+cleanup() {
+	[ -f "file.txt" ] && rm -f file.txt
+}
+trap cleanup EXIT
 
 failed() {
 	printf "${RED}Failed${RESET}\n"
