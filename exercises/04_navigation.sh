@@ -21,4 +21,8 @@
 #
 # $ cat file_name
 #
-# Do not delete the newly created folders until 06_removing
+# Don't worry about deleting the newly created folders, it should be
+# automatically deleted.
+
+password=""
+echo "$password"

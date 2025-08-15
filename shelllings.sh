@@ -10,7 +10,7 @@ list_prev() {
 		name=$(basename "$file")
 
 		case "$name" in
-			04_navigation.sh|11_userinput.sh|13_copying_and_moving.sh)
+			11_userinput.sh|13_copying_and_moving.sh)
 				echo "$name: skipped"
 				continue
 				;;
