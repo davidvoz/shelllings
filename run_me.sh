@@ -18,7 +18,8 @@ echo "but the command 'sh' doesn't really exist on most systems."
 echo "Run 'ls -l /bin/sh' to see if there is a link to another program."
 pause "Let's test it out [press ENTER for ls -l /bin/sh]"
 
-echo "${BLUE}$(ls -l /bin/sh)${RESET}"
+printf "${BLUE}$(ls -l /bin/sh)${RESET}"
+echo ""
 
 USER_SHELL=$(ls -l /bin/sh | awk '{print $NF}')
 
@@ -48,9 +49,11 @@ echo "'sh shelllings.sh test' to see if it's able to be run"
 pause "[sh shelllings.sh test]"
 
 if sh shelllings.sh test; then
-	echo "${GREEN}Passed${RESET}"
+	printf "${GREEN}Passed${RESET}"
+	echo ""
 else
-	echo "${RED}ERROR failed${RESET}"
+	printf "${RED}ERROR failed${RESET}"
+	echo ""
 	exit 1
 fi
 
@@ -59,7 +62,8 @@ echo "No error message meant that it has not failed. Lets continue on"
 pause "and see what exercises there are right now [ls exercises]"
 
 all_ex=$(ls exercises)
-echo "${BLUE}$all_ex${RESET}"
+printf "${BLUE}$all_ex${RESET}"
+echo ""
 
 echo ""
 pause "[press ENTER]"
